@@ -5,7 +5,7 @@ FROM node:20
 WORKDIR /app
 
 # Installer Kanbn globalement
-RUN npm install -g kanbn
+RUN npm install -g https://github.com/kanbn/kan.git
 
 # Créer un dossier de données
 RUN mkdir -p /app/data/.kanbn
